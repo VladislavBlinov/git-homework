@@ -1,30 +1,50 @@
-body{
-    font-family: Tahoma;
-    margin: 0;
-    background-color: #adadad;
+body {
+	font-family: Tahoma;
+	margin: 0;
+	background-color: #adadad;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.text, .text2, .image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.text{
-    font-size: 30px;
-    font-weight: 600;
-    color: #2e1114;
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: space-around;
 }
 
-.text2{
-    font-size: 30px;
-    font-weight: 600;
-    color: #501b1d;
+.text {
+	font-size: 45px;
+	font-weight: 600;
+	color: #2e1114;
 }
 
-img{
-    width: 300px;
-    height: 250px;
-    object-fit: cover;
+.text2 {
+	font-size: 30px;
+	font-weight: 600;
+	color: #501b1d;
+}
+
+.image {
+	font-size: 30px;
+	font-weight: 600;
+	color: #501b1d;
+}
+
+img {
+	width: 300px;
+	height: 250px;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 1400px) {
+	.container {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
 }
